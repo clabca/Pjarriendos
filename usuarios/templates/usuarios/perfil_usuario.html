@@ -1,0 +1,13 @@
+{% extends 'propiedades/arrendatario_home.html' %} {% block title %}Actualizar
+Usuario {% endblock %} {% block content %}
+<p>Bienvenido, {{ user.username }}</p>
+
+<p>Nombre : {{ user.first_name }}</p>
+<p>Apellidos : {{ user.last_name }}</p>
+
+<p>Email: {{ user.email }}</p>
+<p>RUT: {{ user.rut }}</p>
+<p>Teléfono: {{ user.telefono }}</p>
+<p>Dirección: {{ user.direccion }}</p>
+
+{% endblock %}

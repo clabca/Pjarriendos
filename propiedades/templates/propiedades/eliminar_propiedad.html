@@ -1,0 +1,13 @@
+{% extends 'propiedades/arrendador_home.html' %} {% block title %}Eliminar
+Propiedad {% endblock %} {% block content %}
+
+<h1>Eliminar Propiedad</h1>
+<p>
+  ¿Estás seguro de que quieres eliminar la propiedad "{{ propiedad.nombre }}"?
+</p>
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Eliminar</button>
+</form>
+
+{% endblock %}

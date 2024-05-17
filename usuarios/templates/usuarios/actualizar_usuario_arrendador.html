@@ -1,0 +1,58 @@
+{% extends 'propiedades/arrendador_home.html' %} {% block title %}Actualizar
+Usuario {% endblock %} {% block content %}
+<h4>Actualizar Mis Datos</h4>
+{% comment %}
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Guardar cambios</button>
+</form>
+{% endcomment %}
+
+<form method="post">
+  {% csrf_token %}
+  <div style="max-width: 400px; margin: 0 auto">
+    <table style="width: 100%">
+      <tr>
+        <td style="text-align: right">
+          <label for="id_first_name">{{ form.first_name.label }}</label>
+        </td>
+        <td>{{ form.first_name }}</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label for="id_last_name">{{ form.last_name.label }}</label>
+        </td>
+        <td>{{ form.last_name }}</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label for="id_email">{{ form.email.label }}</label>
+        </td>
+        <td>{{ form.email }}</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label for="id_rut">{{ form.rut.label }}</label>
+        </td>
+        <td>{{ form.rut }}</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label for="id_telefono">{{ form.telefono.label }}</label>
+        </td>
+        <td>{{ form.telefono }}</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label for="id_direccion">{{ form.direccion.label }}</label>
+        </td>
+        <td>{{ form.direccion }}</td>
+      </tr>
+    </table>
+    <div style="text-align: center">
+      <input type="submit" value="Actualizar" />
+    </div>
+  </div>
+</form>
+
+{% endblock %}

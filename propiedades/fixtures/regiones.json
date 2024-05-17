@@ -1,0 +1,114 @@
+[
+  {
+    "model": "propiedades.Region",
+    "pk": 1,
+    "fields": {
+      "nombre": "Región de Arica y Parinacota"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 2,
+    "fields": {
+      "nombre": "Región de Tarapacá"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 3,
+    "fields": {
+      "nombre": "Región de Antofagasta"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 4,
+    "fields": {
+      "nombre": "Región de Atacama"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 5,
+    "fields": {
+      "nombre": "Región de Coquimbo"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 6,
+    "fields": {
+      "nombre": "Región de Valparaíso"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 7,
+    "fields": {
+      "nombre": "Región Metropolitana de Santiago"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 8,
+    "fields": {
+      "nombre": "Región del Libertador General Bernardo O'Higgins"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 9,
+    "fields": {
+      "nombre": "Región del Maule"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 10,
+    "fields": {
+      "nombre": "Región de Ñuble"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 11,
+    "fields": {
+      "nombre": "Región del Biobío"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 12,
+    "fields": {
+      "nombre": "Región de la Araucanía"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 13,
+    "fields": {
+      "nombre": "Región de Los Ríos"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 14,
+    "fields": {
+      "nombre": "Región de Los Lagos"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 15,
+    "fields": {
+      "nombre": "Región Aisén del General Carlos Ibáñez del Campo"
+    }
+  },
+  {
+    "model": "propiedades.Region",
+    "pk": 16,
+    "fields": {
+      "nombre": "Región de Magallanes y de la Antártica Chilena"
+    }
+  }
+]

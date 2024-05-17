@@ -1,0 +1,5 @@
+Región: Región del Maule
+Inmuebles:
+- Casa en Condominio
+- Casa 2 en Condominio
+

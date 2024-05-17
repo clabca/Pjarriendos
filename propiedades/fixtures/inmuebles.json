@@ -1,0 +1,38 @@
+[
+  {
+    "model": "propiedades.Propiedad",
+    "pk": 1,
+    "fields": {
+      "nombre": "Casa en Condominio",
+      "descripcion": "Acogedora casa en condominio con jardín privado",
+      "m2_construidos": 120,
+      "m2_terreno": 300,
+      "num_estacionamientos": 2,
+      "num_habitaciones": 3,
+      "num_banos": 2,
+      "direccion": "Calle Ejemplo #123",
+      "comuna": 201,
+      "tipo_propiedad": 1,
+      "precio_arriendo_mensual": 500000,
+      "arrendador": null
+    }
+  },
+  {
+    "model": "propiedades.Propiedad",
+    "pk": 2,
+    "fields": {
+      "nombre": "Casa 2 en Condominio",
+      "descripcion": "Acogedora casa en condominio con jardín privado",
+      "m2_construidos": 120,
+      "m2_terreno": 300,
+      "num_estacionamientos": 2,
+      "num_habitaciones": 3,
+      "num_banos": 2,
+      "direccion": "Calle Ejemplo #123",
+      "comuna": 200,
+      "tipo_propiedad": 2,
+      "precio_arriendo_mensual": 500000,
+      "arrendador": null
+    }
+  }
+]

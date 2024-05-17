@@ -1,0 +1,46 @@
+{% extends 'propiedades/arrendador_home.html' %} {% block title %}Editar
+Propiedad {% endblock %} {% block content %}
+<h4>Editar Propiedad</h4>
+
+<style>
+  /* Estilos CSS para la tabla */
+  table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    border-collapse: collapse; /* Colapsar bordes de celdas */
+  }
+
+  th,
+  td {
+    padding: 10px; /* Espacio interno en celdas */
+    border: 1px solid #ddd; /* Borde de celdas */
+    text-align: center; /* Centrar texto en celdas */
+  }
+
+  th {
+    background-color: #f2f2f2; /* Color de fondo para encabezados */
+  }
+
+  td {
+    background-color: #ffffff; /* Color de fondo para celdas de datos */
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo alternativo para filas pares */
+  }
+</style>
+<form method="post">
+  {% csrf_token %}
+  <table>
+    <tbody>
+      {% for field in form %}
+      <tr>
+        <td>{{ field.label_tag }}</td>
+        <td>{{ field }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <button class="btn btn-warning" type="submit">Guardar</button>
+</form>
+{% endblock %}

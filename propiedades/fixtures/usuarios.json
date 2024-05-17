@@ -1,0 +1,28 @@
+[
+  {
+    "model": "usuarios.PerfilUsuario",
+    "pk": 1,
+    "fields": {
+      "username": "usuario11",
+      "password": "contrasenia123",
+      "email": "usuario1@example.com",
+      "tipo_usuario": "arrendador",
+      "rut": "12345678-9",
+      "telefono": "+56912345678",
+      "direccion": "Calle Ejemplo #123"
+    }
+  },
+  {
+    "model": "usuarios.PerfilUsuario",
+    "pk": 2,
+    "fields": {
+      "username": "usuario2",
+      "password": "contrasenia123",
+      "email": "usuario1@example.com",
+      "tipo_usuario": "arrendatario",
+      "rut": "12345678-9",
+      "telefono": "+56912345678",
+      "direccion": "Calle Ejemplo #123"
+    }
+  }
+]

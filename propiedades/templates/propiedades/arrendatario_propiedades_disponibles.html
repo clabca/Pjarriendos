@@ -1,0 +1,19 @@
+{% extends 'propiedades/arrendatario_home.html' %} {% block title %}Listado de
+Propiedades {% endblock %} {% block content %}
+<h2>Listado de Propiedades Disponibles</h2>
+<div class="row">
+  {% for propiedad in propiedades %}
+  <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+      <img src="{{ propiedad.imagen.url }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ propiedad.titulo }}</h5>
+        <p class="card-text">{{ propiedad.descripcion }}</p>
+        <p class="card-text">Precio: ${{ propiedad.precio }}</p>
+        <a href="#" class="btn btn-primary">Ver Detalles</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

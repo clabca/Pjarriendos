@@ -1,0 +1,8 @@
+{% extends 'propiedades/arrendador_home.html' %} {% block title %}Listado de
+Propiedades {% endblock %} {% block content %}
+<h1>Crear Propiedad</h1>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Guardar</button>
+</form>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'propiedades/arrendador_home.html' %} {% block title %} Listado de
+Propiedades {% endblock %} {% block content %}
+<div>
+  <a
+    class="btn btn-primary btn-lg"
+    href="{% url 'crear_propiedad' %}"
+    role="button"
+    >Crear Propiedad</a
+  >
+
+  <hr />
+
+  <h4>Mis Propiedades</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Comuna</th>
+        <th>Valor Mensual</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for propiedad in propiedades %}
+      <tr>
+        <td>{{ propiedad.id }}</td>
+        <td>
+          <a href="{% url 'detalle_propiedad' propiedad.id %}"
+            >{{ propiedad.nombre }}</a
+          >
+        </td>
+        <td>{{ propiedad.comuna }}</td>
+        <td>{{ propiedad.precio_arriendo_mensual }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% endblock %}
+</div>
